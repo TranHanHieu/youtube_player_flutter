@@ -235,11 +235,11 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
   Widget build(BuildContext context) {
     return Material(
       elevation: 0,
-      color: Colors.black,
+      color: Colors.transparent,
       child: InheritedYoutubePlayer(
         controller: controller,
         child: Container(
-          color: Colors.black,
+          color: Colors.transparent,
           width: widget.width ?? MediaQuery.of(context).size.width,
           child: _buildPlayer(
             errorWidget: Container(
